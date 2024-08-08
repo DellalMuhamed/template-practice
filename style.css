@@ -13,6 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 51px 0;
 }
 header span {
   background: linear-gradient(to left, #6318dd, #d03be8);
@@ -53,7 +54,21 @@ header .butt_group button {
   border-radius: 15px;
   background-color: aqua;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  box-shadow: 5px 5px 10px 0 rgba(238, 43, 222, 0.1);
+}
+.intro .left_part .div1 h4 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 19px;
+  background: linear-gradient(to left, #6318dd, #d03be8);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.intro .left_part .div1 img {
+  margin-left: 8px;
 }
 .intro .left_part h1 {
   font-family: "Inter";
@@ -91,10 +106,9 @@ header .butt_group button {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  margin-right: 35px;
 }
 .intro .left_part .btn_grp .btn2 {
-  width: 126px;
-  height: 43px;
   padding: 12px 20px 12px 17px;
   border: 1px solid var(--Primary, #6318dd);
   border-radius: 116px;
@@ -120,7 +134,7 @@ header .butt_group button {
 .intro .right_part .petit_tableau {
   width: 327px;
   height: 354px;
-  background-color: forestgreen;
+  background-color: #e9f7e9;
   padding: 17px 21px 23px 22px;
   position: absolute;
   top: 391px;
@@ -188,6 +202,7 @@ header .butt_group button {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  margin: 0;
 }
 .intro .right_part .petit_tableau .botm_part .heart img {
   width: 17px;
@@ -437,8 +452,9 @@ header .butt_group button {
   gap: 5px;
   padding: 24px;
   border-radius: 10px;
-  background-color: #d03be8;
+  background-color: #e5eef3;
   margin-bottom: 24px;
+  box-shadow: -8px 35px 36px 0 rgba(238, 43, 222, 0.1), -19px 78px 48px 0, rgba(238, 43, 222, 0.1), -33px 139px 57px 0 rgba(238, 43, 222, 0.1), -52px 217px 62px 0 rgba(238, 43, 222, 0.1), 5px 5px 10px 0 rgba(238, 43, 222, 0.1);
 }
 .choose_us .right_p .options .option .img_cont {
   padding: 15px;
@@ -575,6 +591,7 @@ header .butt_group button {
   margin-bottom: 51px;
   margin-left: 20px;
   color: rgba(12, 17, 31, 0.6);
+  margin-left: 20px;
 }
 .destination .city_choose .city .more {
   display: flex;
@@ -599,6 +616,7 @@ header .butt_group button {
   font-size: 25px;
   line-height: 29px;
   color: #0c111f;
+  margin: 0;
 }
 .destination .city_choose .city .more .intirest span {
   font-family: "Pppins";
@@ -617,11 +635,12 @@ header .butt_group button {
   font-size: 15px;
   line-height: 26px;
   color: #fff;
-  background: linear-gradient(132.75deg, #6318dd -5.33%, #d03be8 108.08%);
+  background-image: linear-gradient(#6318dd, #d03be8);
 }
 
 .customer {
   text-align: center;
+  margin-top: 120px;
 }
 .customer h2 {
   margin-bottom: 60px;
@@ -630,10 +649,290 @@ header .butt_group button {
   width: 630px;
   margin: auto;
   background-color: rebeccapurple;
+  position: relative;
 }
 .customer .content .cust_img {
   margin: 10px auto 59px;
 }
+.customer .content .testimonials__icon {
+  position: absolute;
+  top: 2px;
+  left: 248px;
+}
 .customer .content h4 {
   font-family: "Inter";
+  color: #6318dd;
+  margin-bottom: 26px;
+}
+.customer .content p {
+  font-family: "Inter";
+  font-size: 20px;
+  line-height: 38px;
+  color: #05073c;
+  margin-bottom: 27px;
+}
+.customer .content h3 {
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 26px;
+  color: #05073c;
+  margin-bottom: 3px;
+}
+.customer .content .second_h4 {
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 24px;
+  color: #05073c;
+  margin-bottom: 77px;
+}
+.customer .content .pagin_dote {
+  margin-bottom: 137px;
+}
+
+.meet {
+  display: flex;
+  justify-items: center;
+}
+.meet .left_p {
+  margin: 80px 89px 213px 0;
+}
+.meet .left_p h2 {
+  font-family: "Inter";
+  font-weight: 700 bold;
+  font-size: 55px;
+  color: #0c111f;
+  margin-bottom: 8px;
+}
+.meet .left_p p {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 25px;
+  color: #191825;
+  margin-bottom: 13px;
+}
+.meet .left_p .img {
+  width: 524px;
+  height: 305px;
+  position: relative;
+  z-index: 1;
+}
+.meet .left_p .city_locat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 23px;
+  left: 20px;
+  padding: 6px 12px;
+  border-radius: 101px;
+  background-color: rgba(64, 64, 64, 0.22);
+  z-index: 2;
+}
+.meet .left_p .city_locat img {
+  margin-right: 8px;
+}
+.meet .left_p .city_locat h3 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 180%;
+  color: #fff;
+}
+.meet .right_p {
+  width: 586px;
+  height: 493px;
+  margin: 147px 0 152px 86px;
+  background-color: #616161;
+}
+.meet .right_p .one {
+  display: flex;
+  align-items: center;
+}
+.meet .right_p .one .l_img {
+  width: 91px;
+  height: 91px;
+  border-radius: 50%;
+  background-color: #508080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 14px 34px 7px 0;
+}
+.meet .right_p .one .l_img img {
+  width: 48px;
+  height: 48px;
+}
+.meet .right_p .one h3 {
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+.meet .right_p hr {
+  margin: 42px 0 36px;
+}
+
+.start {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1262px;
+  height: 439px;
+  border-radius: 20px;
+  padding: 58px 60px 65px;
+  background-color: #6318dd;
+  position: relative;
+  margin-bottom: 80px;
+}
+.start .left h2 {
+  font-family: "Inter";
+  font-weight: 700 bold;
+  font-size: 55px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.start .left p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.start .left button {
+  padding: 16px 26px 16px 23px;
+  border: none;
+  border-radius: 156px;
+  background-color: #f98112;
+  color: #fff;
+}
+.start .right .img1 {
+  position: absolute;
+  bottom: 192px;
+  right: -31px;
+  z-index: 1;
+}
+.start .right .img2 {
+  position: absolute;
+  right: 93px;
+  bottom: 0px;
+  z-index: 2;
+}
+.start .right button {
+  position: absolute;
+  right: -24px;
+  bottom: 236px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 99px;
+  background-color: #fff;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins ";
+  font-size: 14px;
+}
+.start .right button img {
+  margin-right: 8px;
+}
+
+footer .hr1 {
+  margin: 0 92px 118px 0;
+  color: #eff0f6;
+}
+footer .footer_cont {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_cont ul {
+  list-style: none;
+}
+footer .footer_cont .social_media h3 {
+  font-family: "Mixed";
+  font-size: 25px;
+  line-height: 42px;
+  margin-bottom: 24px;
+}
+footer .footer_cont .social_media h3 span {
+  background: linear-gradient(to left, #6318dd, #d03be8);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+footer .footer_cont .social_media h6 {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  color: #6f6c90;
+  margin-bottom: 24px;
+}
+footer .footer_cont .social_media ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer_cont .social_media ul li {
+  margin-right: 22px;
+}
+footer .footer_cont .social_media ul li img {
+  width: 20px;
+  height: 14px;
+}
+footer .footer_cont .divv h2 {
+  font-family: "Inter";
+  font-weight: 700 bold;
+  font-size: 18px;
+  color: #170f49;
+  margin-bottom: 39px;
+}
+footer .footer_cont .divv li {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: #6f6c90;
+  margin-bottom: 18px;
+}
+footer .footer_cont .contact_us h2 {
+  font-family: "Inter";
+  font-weight: 700 bold;
+  font-size: 18px;
+  color: #170f49;
+  margin-bottom: 41px;
+}
+footer .footer_cont .contact_us .contact_cont {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+footer .footer_cont .contact_us .contact_cont img {
+  margin-right: 8px;
+}
+footer .footer_cont .contact_us .contact_cont h6 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: #6f6c90;
+}
+footer .hr2 {
+  color: #d9dbe9;
+  margin-bottom: 25px;
+}
+footer .footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 124px 35px 120px;
+}
+footer .footer_bottom .h6_1 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: #6f6c90;
+  margin-right: 411px;
+}
+footer .footer_bottom .h6_2 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: #6f6c90;
+}
+footer .footer_bottom .h6_2 span {
+  color: #4a3aff;
 }/*# sourceMappingURL=style.css.map */
